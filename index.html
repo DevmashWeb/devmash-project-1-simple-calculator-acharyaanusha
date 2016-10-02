@@ -2,34 +2,44 @@
 <html lang="en">
 
 <head>
-    <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>
-        Your Title here
-    </title>
-    <meta content="" name="description">
-    <meta content="" name="author">
-    <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" name="viewport" />
-    <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/skeleton.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="images/favicon.png" rel="icon" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <h1>
+    	Simple Calculator
+    </h1>
 </head>
-
 <body>
-    <!-- Content
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<div class="parent">
+		<div class="display"> 
+			<span id="output"> </span>
+		</div> 
+		<div class="buttons" style="width:1000px; height:500px;">
+			<input class="in" type="button" value="7" onclick='stack("7")'>
+			<input class="in" type="button" value="8" onclick='stack("8")'>
+			<input class="in" type="button" value="9" onclick='stack("9")'>
+        	<input id="clear" type="button" value="AC" onclick="empty()">
+        	</br>
+        	<input class="in" type="button" value="4" onclick='stack("4")'>
+        	<input class="in" type="button" value="5" onclick='stack("5")'>
+	        <input class="in" type="button" value="6" onclick='stack("6")'>
+	        <input id="in" type="button" value="*" onclick='stack("*")'>
+	        <input id="in" type="button" value="/" onclick='stack("/")'>
+	        </br>
+	        <input class="in" type="button" value="3" onclick= 'stack("3")'>
+	        <input class="in" type="button" value="2" onclick='stack("2")'>
+	        <input class="in" type="button" value="1" onclick='stack("1")'>
+	        <input id="in" type="button" value="+" onclick='stack("+")'>
+	        <input id="in" type="button" value="-" onclick='stack("-")'>
+	        </br>
+	        <input class="in" type="button" value="0" onclick= 'stack("0")'>
+	        <input class="in" type="button" value="." onclick= 'stack(".")'>
+	        <input id="in" type="button" value="%" onclick='stack("%")'>
+	        <input id="equals" type="button" value="=" onclick= "calc()"> 
+	    </div>
+	</div>
 
-
-    <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</h4>
+<script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
